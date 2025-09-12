@@ -22,9 +22,9 @@ steps:
 - name: Check for index.html
 run: |
 if [ ! -f index.html ]; then
-echo "index.html file not found" > validation_report_index.txt
-echo "::error::index.html file not found"
-exit 1
+  echo "index.html file not found" > validation_report_index.txt
+  echo "::error::index.html file not found"
+  exit 1
 else
 echo "index.html file found. All good." > validation_report_index.txt
 fi
